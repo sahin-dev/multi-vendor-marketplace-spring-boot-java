@@ -1,0 +1,13 @@
+package com.bestkid.bestkid_api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BestkidApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BestkidApiApplication.class, args);
+	}
+
+}

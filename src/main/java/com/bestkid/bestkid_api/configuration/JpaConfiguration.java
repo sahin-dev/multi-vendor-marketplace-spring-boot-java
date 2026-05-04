@@ -21,7 +21,7 @@ public class JpaConfiguration {
     public DataSource dataSource(){
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/your_db_name");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/bestkid");
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
         dataSource.setPassword("sah#1122SIR");
@@ -29,11 +29,11 @@ public class JpaConfiguration {
 
     }
 
-     @Bean
+    @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.example.entity");
+        em.setPackagesToScan("com.bestkid.bestkid_api.entity");
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

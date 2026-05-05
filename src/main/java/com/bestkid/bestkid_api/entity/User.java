@@ -1,5 +1,6 @@
 package com.bestkid.bestkid_api.entity;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
@@ -32,6 +33,10 @@ public class User{
     private String password;
 
     private String role;
+
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
 
     
 }

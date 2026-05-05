@@ -29,14 +29,13 @@ public class JwtAuthenticationToken extends AbstractAuthenticationToken {
 
     @Override
     public @Nullable Object getCredentials() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCredentials'");
+        
+        return this.token;
     }
 
     @Override
     public @Nullable Object getPrincipal() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrincipal'");
+        return this.principal;
     }
     
 }
